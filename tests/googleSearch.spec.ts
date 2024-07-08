@@ -8,7 +8,7 @@ test('Search ${searchWord} in google', async ({ page }) => {
   await googleSearch.goto();
   await googleSearch.searchFor(searchWord);
   await expect(googleSearch.pageContent).toContainText('Playwright\: Fast and reliable end-to-end testing');
-  await expect(googleSearch.pageContent).toContainText('microsoft/playwright');
+  await expect(googleSearch.pageContent).toContainText('microsoftplaywright');
 });
 
 /*
