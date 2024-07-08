@@ -35,7 +35,7 @@ export class GoogleSearchPage {
   async searchFor(text) {
     await this.fieldSearch.fill(text);
     await this.page.keyboard.press('Enter');
- //   await this.page.locator('#bres').getByText('People also search for').isVisible();
+    await this.page.locator('#bres').getByText('People also search for').isVisible();
 
   }
 
